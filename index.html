@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Ticket</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h3>Reena Cinema</h3>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#register">Register</a>
+        </div>
+    </header><br><br>
+
+    <main>
+        <div class="movie">
+            <h2>Upcoming Movie</h2>
+            <video src="./blackpanther.mp4" controls>
+
+
+            </video><p><Strong>Title:</Strong> Black panther2</p><br>
+            <small>
+                <em>
+                    Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their
+                    nation from intervening world powers in the wake of King T'Challa's death. As
+                    the Wakandans strive to embrace their next chapter, the heroes must band together
+                    with Nakia and Everett Ross to forge a new path for their beloved kingdom.
+                </em>
+            </small>
+        </div><br>
+        <section class="form-container" id="register">
+            <h2>Movie Ticket</h2>
+            <form action="" method="post">
+
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" placeholder="Full name" required="">
+                </div>
+
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="kareen@gmail.com" required="">
+                </div>
+
+                <div class="form-element">
+                    <label for="phone-number">Phone-number</label>
+                    <input type="tel" name="phone-numner" placeholder="+234-09034534699" required="">
+                </div>
+
+                <div class="form-element">
+                    <label for="gender">gender</label>
+                    <select name="gender" required="">
+                        <option value=""></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label for="movie-type">Movie type</label>
+                    <select name="movie" id="" required="">
+                        <option value=""></option>
+                        <option value="action">Action</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="black-panter-2">Black-panther-2</option>
+                        <option value="the-woman-king">The-woman-king</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label for="movie-type">seat number</label>
+                    <input type="number" name="seat-number" max="1000" min="1">
+                </div>
+
+                <div class="form-element">
+                    <label for="time">movie time</label>
+                   <select name="movie-time" required="">
+                        <option value=""></option>
+                        <option value="10:00-12:00pm">10:00-12:00pm</option>
+                        <option value="2:00-3:30pm">2:00-3:30pm</option>
+                        <option value="3:00-5:00pm">3:00-5:00pm</option>
+                        <option value="7:00-9:00pm">7:00-9:00pm</option>
+                        <option value="9:00-11:00pm">9:00-11:00pm</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label for="date">Date</label>
+                    <input type="date" name="move-time">
+                </div>
+
+                <div class="form-element">
+                    <input type="submit" id="submit" value="Register">
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Reena Cinema 2022</p>
+
+    </footer>
+
+</body>
+</html>
