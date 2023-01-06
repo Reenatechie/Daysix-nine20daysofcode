@@ -32,20 +32,25 @@ main{
 }
 .movie{
     text-align: center;
-    width: 50%;
+    width: 70%;
     margin: auto;
+    padding: 1.2rem;
     color: #fff;
+    border: 1px solid #fff;
 }
 .movie video{
-    width: 400px;
+    width: 100%;
     text-align: center;
 
 }
+.movie small em{
+    text-align: start;
+}
 .form-container{
     background-color:#fdf3f2 ;
-    width: 50%;
+    width: 70%;
     margin: auto;
-    padding: 3rem;
+    padding: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
@@ -53,8 +58,8 @@ main{
     text-align: center;
     margin-bottom: 1rem;
 }
-form{
-    max-width: 500px;
+.form-container form{
+    width: 100%;
     margin: auto;
     border: 2px solid navy;
     padding: 1rem;
@@ -63,12 +68,12 @@ form{
 form .form-element{
     display: flex;
     flex-direction: column;
-    margin: 0rem 5rem;
+    margin: 0rem 3rem;
     padding-bottom: 1rem;
 }
 
 form .form-element input, .form-element select{
-    width:300px;
+    width:100%;
     height: 35px;
     padding: 0.5rem;
     border-radius: 0.3rem;
@@ -86,25 +91,6 @@ form .form-element label{
 #submit:hover{
     background-color: green;
     color: white;
-
-
-    /*------------------media query---------------------------*/
-@media screen and (max-width:768px){
-    .navigation{
-      padding: 0rem 0rem;
-      height: 60px;
-    }
-    ul{
-      margin-right: 1.5rem;
-    }
-    ul li{
-      padding: 0rem 0.2rem;
-    }
-    ul li a{
-      display: inline;
-      list-style-type: none;
-      padding: 1.3rem 0.5rem;
-      font-size: 1.2rem;
 }
 footer{
     background-color: #1d3044;
@@ -115,4 +101,50 @@ footer{
     align-items: center;
     text-align: center;
     color: white;
+}
+
+@media screen and (max-width:768px){
+    .movie{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .movie video{
+        width: 100%;
+        text-align: center;
+    }
+    .form-container{
+        width: 60%;
+        margin: auto;
+        padding: 1rem;
+    }
+    form .form-element{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 1.2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:520px){
+    header h3{
+        font-size: 1rem;
+    }
+    header .links{
+        display: flex;
+        align-items: center;
+    }
+    header .links a{
+        font-size: 0.9rem;
+    }
+    .form-container{
+        width: 80%;
+        margin: auto;
+        padding: 1.2rem;
+    }
+    form .form-element{
+        margin: 0rem;
+        padding-bottom: 1rem;
+    }
 }
